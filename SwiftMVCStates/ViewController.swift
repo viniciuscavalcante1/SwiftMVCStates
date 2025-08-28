@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         print("Tela 1: viewDidLoad (view foi carregada!)")
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true, completion:nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("Tela 1: viewWillAppear (view vai aparecer)")
